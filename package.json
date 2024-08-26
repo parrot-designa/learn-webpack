@@ -150,7 +150,7 @@
     "test:basic": "node --expose-gc --max-old-space-size=4096 --experimental-vm-modules --trace-deprecation node_modules/jest-cli/bin/jest --logHeapUsage --testMatch \"<rootDir>/test/*.basictest.js\"",
     "test:unit": "node --max-old-space-size=4096 --experimental-vm-modules --trace-deprecation node_modules/jest-cli/bin/jest --testMatch \"<rootDir>/test/*.unittest.js\"",
     "build:examples": "cd examples && node buildAll.js",
-    "build:learn": "cd learn && node ./run.js",
+    "build:learn": "cd learn && /Users/wjb/.nvm/versions/node/v16.20.0/bin/node ./run.js",
     "show:learn": "cd learn && live-server",
     "type-report": "rimraf coverage && yarn cover:types && yarn cover:report && open-cli coverage/lcov-report/index.html",
     "pretest": "yarn lint",
