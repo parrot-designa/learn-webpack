@@ -1,7 +1,8 @@
-const path = require('path');
+const path = require('path'); 
 
 module.exports = {
-    mode:'production',
+    devtool:false,
+    mode:'development',
     entry:'./src/index.js',
     context: path.resolve(__dirname,'.'),
     output:{
