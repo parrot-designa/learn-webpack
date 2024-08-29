@@ -3,6 +3,4 @@ const webpackConfig = require('./webpack.config');
 
 const compiler = webpack(webpackConfig); 
 
-compiler.run((err,stats)=>{
-    console.log("===end==>",err);
-})
+compiler.run();

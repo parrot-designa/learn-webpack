@@ -1,5 +1,23 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("const { foo } = __webpack_require__(/*! ./util/m */ \"./src/util/m.js\");\n\nconsole.log(foo(10, 20));\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
 
 /***/ "./src/util/m.js":
 /*!***********************!*\
@@ -8,13 +26,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   foo: () => (/* binding */ foo)
-/* harmony export */ });
-function foo(n1, n2){
-    return n1 + n2;
-}
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   foo: () => (/* binding */ foo)\n/* harmony export */ });\nfunction foo(n1, n2){\n    return n1 + n2;\n}\n\n//# sourceURL=webpack:///./src/util/m.js?");
 
 /***/ })
 
@@ -74,12 +86,11 @@ function foo(n1, n2){
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-const { foo } = __webpack_require__(/*! ./util/m */ "./src/util/m.js");
-
-console.log(foo(10, 20));
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
 /******/ })()
 ;
