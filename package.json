@@ -152,6 +152,7 @@
     "build:examples": "cd examples && node buildAll.js",
     "build:learn": "cd learn && /Users/wjb/.nvm/versions/node/v16.20.0/bin/node ./run.js",
     "build:learn1": "cd docs && cd 1 && /Users/wjb/.nvm/versions/node/v16.20.0/bin/node ./index.js",
+    "build:learn2": "cd docs && cd 2 && /Users/wjb/.nvm/versions/node/v16.20.0/bin/node ./index.js",
     "show:learn": "cd learn && live-server",
     "type-report": "rimraf coverage && yarn cover:types && yarn cover:report && open-cli coverage/lcov-report/index.html",
     "pretest": "yarn lint",

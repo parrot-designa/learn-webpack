@@ -7,6 +7,20 @@
         {
             "type": "pwa-node",
             "request": "launch",
+            "name": "调试2",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "/Users/wjb/.nvm/versions/node/v16.20.0/bin/node",
+            "args": [
+                "/Users/wjb/.nvm/versions/node/v16.20.0/bin/npm",
+                "run-script",
+                "build:learn2"
+            ]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
             "name": "调试1",
             "skipFiles": [
                 "<node_internals>/**"
