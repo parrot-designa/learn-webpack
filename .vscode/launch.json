@@ -1,0 +1,36 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "调试1",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "/Users/wjb/.nvm/versions/node/v16.20.0/bin/node",
+            "args": [
+                "/Users/wjb/.nvm/versions/node/v16.20.0/bin/npm",
+                "run-script",
+                "build:learn1"
+            ]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "调试npm run build:learn命令",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "/Users/wjb/.nvm/versions/node/v16.20.0/bin/node",
+            "args": [
+                "/Users/wjb/.nvm/versions/node/v16.20.0/bin/npm",
+                "run-script",
+                "build:learn"
+            ]
+        }
+    ]
+}
