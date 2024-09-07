@@ -17,12 +17,16 @@ asyncInstance.eatBreakfast.tap('吃早餐',()=>{
         price += 1;
     }
     console.log('花了'+price + '元'); 
+    return price;
 })
 asyncInstance.eatBreakfast.tap('吃早餐',()=>{
     console.log('吃第二次早餐');
+    console.log('花了'+price + '元'); 
+    return price;
 })
 asyncInstance.eatBreakfast.tap('吃早餐',()=>{
     console.log('吃第三次早餐');
+    console.log('花了'+price + '元'); 
 })
 
-asyncInstance.eatBreakfast.call();
+module.exports = asyncInstance;

@@ -2,7 +2,7 @@
 
 tapable库源码：https://github.com/webpack/tapable/tree/master/lib
 
-1. SyncHook
+## 1. SyncHook
 
 SyncHook是一种同步钩子。它的特点是所有注册的监听器（listeners 或称为 taps）都会按照它们被添加的顺序依次执行，并且每个监听器必须等待前一个监听器执行完毕才能开始执行。这意味着，当一个 SyncHook 被触发时，整个流程会被阻塞直到所有的监听器都执行完成。
 
@@ -13,3 +13,11 @@ SyncHook是一种同步钩子。它的特点是所有注册的监听器（listen
 * 顺序性：监听器的执行顺序是固定的，按照注册的顺序执行。这对于依赖于执行顺序的场景非常有用。
 
 需要注意的是，虽然 SyncHook 对于构建插件化系统或需要顺序执行的场景很有用，但如果在前端应用中大量使用它，尤其是在涉及异步操作的情况下，可能会导致性能问题或阻塞主线程，因此要谨慎使用。
+
+### 支持的注册方法
+
+仅支持tap 不支持 tapAsync tapPromise
+
+### 支持的触发回调的方法
+
+仅支持 call 不支持 callAsync callPromise
